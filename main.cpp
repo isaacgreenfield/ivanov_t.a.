@@ -62,7 +62,17 @@ size_t IntArray::size() const noexcept {
   return k;
 }
 int IntArray::last() const noexcept{
-  return a[k - 1];
+  return get(size() - 1);
+}
+void IntArray::add(int i) {
+  int * tmp = new int[size() + 1];
+  for (size_t j = 0; j< size(); ++j) {
+    tmp[j] = a[j];
+  }
+  tmp[size()] = i;
+  delete[] a;
+  a = tmp;
+  ++k;
 }
 
 
