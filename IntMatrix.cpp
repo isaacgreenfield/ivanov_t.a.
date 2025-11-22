@@ -22,7 +22,7 @@ void IntMatrix::add_col(size_t last_col, int x)
     {
       for (size_t j = 0; j < last_col; ++j)
       {
-        tmp.add(get(i * cols + j));
+        if (i + j != 0) tmp.add(get(i * cols + j));
       }
       tmp.add(x);
       for (size_t j = last_col; j < cols; ++j)
@@ -59,7 +59,7 @@ void IntMatrix::add_row(size_t last_row, int x)
     {
       for (size_t j = 0; j < cols; ++j)
       {
-        tmp.add(get(i * cols + j));
+        if (i + j != 0) tmp.add(get(i * cols + j));
       }
     }
     for (size_t i = 0; i < cols; ++i)
