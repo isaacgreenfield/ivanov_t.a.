@@ -1,4 +1,5 @@
 #include "IntArray.h"
+#include <cstddef>
 IntArray::~IntArray() {
   delete[] a;
 }

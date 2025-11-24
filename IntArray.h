@@ -1,5 +1,6 @@
 #ifndef INTARRAY_H
 #define INTARRAY_H
+#include <cstddef>
 struct IntArray
 {
   int* a;

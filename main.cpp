@@ -1,5 +1,6 @@
 #include "IntMatrix.h"
 #include <iostream>
+#include <cstddef>
 int main()
 {
   IntMatrix matrix(3, 3, 1);

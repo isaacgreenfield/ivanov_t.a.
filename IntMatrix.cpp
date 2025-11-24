@@ -1,5 +1,6 @@
 #include "IntMatrix.h"
 #include <iostream>
+#include <cstddef>
 void IntMatrix::add_col(size_t last_col, int x)
 {
   if (last_col == 0)

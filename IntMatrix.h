@@ -2,6 +2,7 @@
 #define INTMATRIX_H
 #include "IntArray.h"
 #include <iostream>
+#include <cstddef>
 struct IntMatrix
 {
   size_t rows;
