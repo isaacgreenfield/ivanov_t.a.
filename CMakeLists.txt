@@ -3,4 +3,14 @@ project(githubkasilove)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(githubkasilove main.cpp)
+set(PROJECT_HEADERS
+        IntArray.h
+        IntMatrix.h
+)
+set(PROJECT_SOURCES
+        main.cpp
+        IntArray.cpp
+        IntMatrix.cpp
+)
+
+add_executable(githubkasilove ${PROJECT_SOURCES} ${PROJECT_HEADERS})

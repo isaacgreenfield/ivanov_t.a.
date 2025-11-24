@@ -36,6 +36,7 @@ int main()
           return 1;
         }
         matrix.add_row(y, z);
+        matrix.show();
       }
       else
       {
@@ -44,6 +45,7 @@ int main()
           return 1;
         }
         matrix.expand(y, z);
+        matrix.show();
       }
     }
     catch (...)
